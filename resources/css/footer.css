@@ -1,0 +1,67 @@
+.footer-style {
+  clear: both;
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 15vw;
+  background-color: #192646;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+.social-media {
+  margin-left: 35vw;
+  padding-top: 80px;
+  margin-bottom: -20px;
+}
+.social-media nav a {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 25px;
+  color: #fff;
+}
+.social-media nav a:hover{
+  color: #ffb72b;
+}
+.publication-style {
+  float: left;
+  margin-left: 10vw;
+  margin-top: 70px;
+}
+.publication-style nav a {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.publication-style nav a:hover{
+  color: #ffb72b;
+}
+.contact-map-style {
+  float: right;
+  margin-top: -30px;
+  margin-right: 10vw;
+}
+.contact-map-style nav {
+  margin-top: 10px;
+}
+.contact-map-style nav a {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+
+  text-decoration: none;
+}
+.contact-map-style nav a:hover{
+  color: #ffb72b;
+}
+.copright-style p {
+  color: #fff;
+  margin-top: 100px;
+  font-size: 15px;
+  text-align: center;
+}

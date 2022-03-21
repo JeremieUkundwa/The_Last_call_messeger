@@ -1,0 +1,205 @@
+@extends('layout')
+
+@section('homePageMain')
+    <main>
+      <!-- Home Page carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="home-image-cara"
+              src="./images/bg-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="home-image-cara"
+              src="./images/bg-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="home-image-cara"
+              src="./images/bg-3.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Main page!! -->
+      <div class="row">
+        <div class="col">
+          <div class="twetter">
+            <h3 style="margin-bottom: 40px; margin-left: 50px">
+              <img src="./images/tweets.png" style="width: 30px" alt="" /> Latest
+              Tweets
+            </h3>
+            <div class="tweet-widgets">
+              <a
+                class="twitter-timeline"
+                href="https://twitter.com/amateraniro?ref_src=twsrc%5Etfw"
+                >Tweets by amateraniro</a
+              >
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="middle-components">
+            <div class="nav-middle" style="    background-color: #192646;color: #fff;">
+              <nav>
+                <a href="/sermony">Sermons</a>
+                <a href="" style="color: #4f3f96;;">Announements</a>
+                <a href="./audio-page.html">Audios</a>
+              </nav>
+            </div>
+            <hr />
+            <div class="middle-content">
+              <p style="padding: 30px;"> <strong>We wish you blessings and God's gracious peace.</strong> </p>
+              <p>
+                "We thank the Lord with all the heart that we have precious light
+                to present before the people, and we rejoice that we have a
+                message for this time which is present truth. The tidings that
+                Christ is our righteousness has brought relief to many, many
+                souls, and God says to His people, “Go forward.” - 1SM 357.1
+              </p>
+              <p>
+                The Three Angels Messages, is the message we proclaim. We invite
+                those who are ready to read it. May God bless you. The message is
+                grouped into three main categories:
+                <ol>
+                  <li>Justification by grace
+                    through faith that invites us to repent and receive Jesus Christ
+                    our righteousness who becomes our life.</li> <br>
+                  <li>The prophecy that
+                  reveals the current times, we observe the signs that Jesus
+                  foretold and its fulfilment.</li> <br>
+                  <li> Healthful messages (temperance)
+                      that teach us to take care of our bodies as temples of the Holy
+                      Spirit. We urge everyone to take heed to this message. We pray for
+                      God's continuous presence. May the leading of the Holy Spirit be
+                      with every reader. Maranatha!
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="youtube-widgets">
+            <h3 style="margin-bottom: 40px">
+              <img src="./images/youtube-videos.png" style="width: 30px" alt="" />
+              Watch Latest Videos
+            </h3>
+            <div class="videos">
+              <div
+                class="taggbox-container"
+                style="width: 100%; height: 100%; overflow: auto"
+              >
+                <div
+                  class="taggbox-socialwall"
+                  data-wall-id="88728"
+                  view-url="https://widget.taggbox.com/88728"
+                ></div>
+                <script
+                  src="https://widget.taggbox.com/embed.min.js"
+                  type="text/javascript"
+                ></script>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="ask-questions">
+        <h1>ASK A QUESTION</h1>
+        <form action="">
+          <div class="ask-question-section">
+            <div class="info-inner-section">
+              <li class="ask-li">
+                <label for="">FIRST NAME</label>
+                <input type="text" name="First Name" id="" required />
+              </li>
+              <br />
+              <li class="ask-li">
+                <label for="">LAST NAME</label>
+                <input type="text" name="Last Name" id="" required />
+              </li>
+              <br />
+              <li class="ask-li">
+                <label for="" style="margin-right:80px">PHONE</label>
+                <input type="number" name="Phone number" id="" required />
+              </li>
+              <br />
+              <li class="ask-li">
+                <label for="" style="margin-right:87px">EMAIL</label>
+                <input type="email" name="Email" id="" required />
+              </li>
+              <br />
+            </div>
+            <div class="textArea-inner-section">
+              <h3>What would you like to know</h3>
+              <textarea name="" id="" cols="35" rows="8" required></textarea>
+              <br />
+              <button type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    
+    @endsection
