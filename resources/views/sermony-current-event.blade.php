@@ -155,18 +155,7 @@
               <span class="month">March</span>
               <span class="year">2022</span>
             </div>
-            <div class="author-holder">
-              <strong>Author</strong>
-              <span>Jeremie Ukundwa</span>
-            </div>
-            <div class="author-social-media">
-              <a href="https://twitter.com/ukundwa_jeremie" target="_blank"
-                ><i class="fa fa-twitter"></i
-              ></a>
-              <a href="mailto:tuyijeremie2019@yahoo.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </div>
+            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
           </div>
           <div class="sermon-intro-content">
             <div class="sermon-title">
@@ -195,18 +184,7 @@
               <span class="month">March</span>
               <span class="year">2022</span>
             </div>
-            <div class="author-holder">
-              <strong>Author</strong>
-              <span>Jeremie Ukundwa</span>
-            </div>
-            <div class="author-social-media">
-              <a href="https://twitter.com/ukundwa_jeremie" target="_blank"
-                ><i class="fa fa-twitter"></i
-              ></a>
-              <a href="mailto:tuyijeremie2019@yahoo.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </div>
+            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
           </div>
           <div class="sermon-intro-content">
             <div class="sermon-title">
@@ -235,18 +213,7 @@
               <span class="month">March</span>
               <span class="year">2022</span>
             </div>
-            <div class="author-holder">
-              <strong>Author</strong>
-              <span>Jeremie Ukundwa</span>
-            </div>
-            <div class="author-social-media">
-              <a href="https://twitter.com/ukundwa_jeremie" target="_blank"
-                ><i class="fa fa-twitter"></i
-              ></a>
-              <a href="mailto:tuyijeremie2019@yahoo.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </div>
+            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
           </div>
           <div class="sermon-intro-content">
             <div class="sermon-title">
@@ -275,18 +242,7 @@
               <span class="month">March</span>
               <span class="year">2022</span>
             </div>
-            <div class="author-holder">
-              <strong>Author</strong>
-              <span>Jeremie Ukundwa</span>
-            </div>
-            <div class="author-social-media">
-              <a href="https://twitter.com/ukundwa_jeremie" target="_blank"
-                ><i class="fa fa-twitter"></i
-              ></a>
-              <a href="mailto:tuyijeremie2019@yahoo.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </div>
+            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
           </div>
           <div class="sermon-intro-content">
             <div class="sermon-title">

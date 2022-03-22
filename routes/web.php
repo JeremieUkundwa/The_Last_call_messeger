@@ -14,12 +14,12 @@ use App\Http\Controllers\HomeController;
 */
 
 // Route::get('/', [HomeController::class,'index']);
-Route::get('/',[HomeController::class,'home']);
-Route::get('/about',[HomeController::class,'aboutUs']);
-Route::get('/contact',[HomeController::class,'contactUs']);
-Route::get('/donate',[HomeController::class,'donate']);
-Route::get('/videos',[HomeController::class,'videos']);
-Route::get('/activities',[HomeController::class,'activities']);
-Route::get('/sermony',[HomeController::class,'sermony']);
-Route::get('/sermony-current-event',[HomeController::class,'currentEvent']);
-Route::get('/sermony-temperence',[HomeController::class,'temperence']);
+Route::get('/',[HomeController::class,'home'])->name('home.index');
+Route::get('/about',[HomeController::class,'aboutUs'])->name('home.about');
+Route::get('/contact',[HomeController::class,'contactUs'])->name('home.contact');
+Route::get('/donate',[HomeController::class,'donate'])->name('home.donate');
+Route::get('/videos',[HomeController::class,'videos'])->name('home.videos');
+Route::get('/activities',[HomeController::class,'activities'])->name('home.activities');
+Route::get('/sermony',[HomeController::class,'sermony'])->name('sermony.sermony');
+Route::get('/sermony-current-event',[HomeController::class,'currentEvent'])->name('sermony.sermony-current-event');
+Route::get('/sermony-temperence',[HomeController::class,'temperence'])->name('sermony.sermony-temperence');

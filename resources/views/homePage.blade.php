@@ -34,7 +34,7 @@
           <div class="carousel-item active">
             <img
               class="home-image-cara"
-              src="./images/bg-1.jpg"
+              src="{{url('images/bg-1.jpg')}}"
               class="d-block w-100"
               alt="..."
             />
@@ -42,7 +42,7 @@
           <div class="carousel-item">
             <img
               class="home-image-cara"
-              src="./images/bg-2.jpg"
+              src="{{url('images/bg-2.jpg')}}"
               class="d-block w-100"
               alt="..."
             />
@@ -50,7 +50,7 @@
           <div class="carousel-item">
             <img
               class="home-image-cara"
-              src="./images/bg-3.jpeg"
+              src="{{url('images/bg-3.jpeg')}}"
               class="d-block w-100"
               alt="..."
             />
