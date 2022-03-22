@@ -137,6 +137,12 @@
 .speaker ul li{
     margin-left: 10vw;
 }
+@media (max-width: 574px){
+  .activity {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+}
+}
 @endsection
 
 

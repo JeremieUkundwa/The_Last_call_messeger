@@ -17,6 +17,7 @@
         </style>
         <link rel="stylesheet" href="{{url('css/footer.css')}}">
         <link rel="stylesheet" href="{{ url('css/header.css')}}">
+        <link rel="stylesheet" href="{{url('css/video.css')}}">
         <style>
 
 /* home-page-main */
