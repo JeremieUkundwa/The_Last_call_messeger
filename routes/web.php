@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SermonController;
+use App\Http\Controllers\VideoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +25,10 @@ Route::get('/activities',[HomeController::class,'activities'])->name('home.activ
 Route::get('/sermony',[HomeController::class,'sermony'])->name('sermony.sermony');
 Route::get('/sermony-current-event',[HomeController::class,'currentEvent'])->name('sermony.sermony-current-event');
 Route::get('/sermony-temperence',[HomeController::class,'temperence'])->name('sermony.sermony-temperence');
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
+
+Route::resource('sermon',SermonController::class);
+Route::resource('video',VideoController::class);

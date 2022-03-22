@@ -1,13 +1,13 @@
 @extends('layout')
 
 @section('sermony-css')
-<!-- .row-post {
+.row-post {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr;
   margin-left: 5vw;
   padding-top: 25px;
   margin-bottom: 30px;
-} -->
+}
 .sermon-title {
   text-align: center;
   font-size: 24px;
@@ -131,6 +131,20 @@
   margin-left: 30vw;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .intro-sermony {
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-top: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
 @endsection
 
 @section('sermony-section')
@@ -147,121 +161,36 @@
         </nav>
       </div>
       <div class="row">
+      @foreach ($sermonies as $sermon)
       <div class="introduction col-md-6">
         <div class="intro-sermony">
           <div class="date-bar">
-            <div class="day">17</div>
+            <div class="day">{{ date("d", strtotime($sermon->created_at)) }}</div>
             <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
+              <span class="month">{{ date("F", strtotime($sermon->created_at)) }}</span>
+              <span class="year">{{ date("Y", strtotime($sermon->created_at)) }}</span>
             </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
+            <img src="{{ $sermon->photo }}" alt="" style="width:260px; height: 220px;">
           </div>
           <div class="sermon-intro-content">
             <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
+              <h3>{{ $sermon->title }}</h3>
             </div>
             <div class="sermon-content">
               <p>
                 <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
+                  >
+                  {{ $sermon->introduction }}
+                  </span
                 >
               </p>
-              <button><a href="./sermons.html#link-to-sermon-1">Read More</a></button>
+              <button><a href="{{route('sermon.show',['sermon'=>$sermon])}}">Read More</a></button>
             </div>
           </div>
         </div>
       </div>
-   
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">17</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-2">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">16</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-3">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">15</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-4">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      @endforeach
       
 
       </div>

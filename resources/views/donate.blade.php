@@ -23,27 +23,17 @@
 
   color: #192646;
 }
-.inner-main-body-section {
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.inner-main-body-section img {
+
+.col img {
   width: 200px;
   height: 100px;
 }
+/*@media (min-width: 768px)
+.row-cols-md-4>* {
+    flex: 0 0 auto;
+    width: 15%;
+}*/
 
-.inner-main-body-section p {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-left: 40px;
-  margin-top: 20px;
-
-  color: #192646;
-}
 
 @endsection
 
@@ -56,6 +46,23 @@
             support the weak, and to remember the words of the Lord Jesus, how
             he said, It is more blessed to give than to receive. (Acts 20:35)
           </p> <br>
+          <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">
+              <img src="./images/mtn-logo.png" alt="">
+              <p>+250782799851</p>
+            </div>
+            <div class="col">
+              <img src="./images/logo.wu.big.svg" style="background-color: rgb(7, 7, 99);" alt="">
+              <p></p>
+            </div>
+            <div class="col"><img src="./images/World-remit-logo.jpeg" alt=""></div>
+            <div class="col">
+              <img src="./images/kcb.png" alt="">
+              <p>4401316835</p>
+            </div>
+          </div>
+        <!-- </div>
           <div class="inner-main-body-section">
             <div id="mtn-donate">
               <img src="./images/mtn-logo.png" alt="">
@@ -73,7 +80,7 @@
               <p>4401316835</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </main>
       <br><br><br><br><br>
 @endsection

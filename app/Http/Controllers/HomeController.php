@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Sermon;
 
 class HomeController extends Controller
 {
-    // public function index(){
-    //     return view('welcome');
-    // }
+    public function index(){
+        return view('welcome');
+    }
 
     public function home(){
         return view('homePage');
@@ -31,7 +32,7 @@ class HomeController extends Controller
         return view('activities');
     }
     public function sermony(){
-        return view('sermony');
+        return view('sermony',['sermonies'=>Sermon::all()]);
     }
     public function temperence(){
         return view('sermony-temperence');
