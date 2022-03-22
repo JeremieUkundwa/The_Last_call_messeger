@@ -97,6 +97,25 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  /* ================ Responsive ============ */
+  @media (max-width: 574px){
+      .middle-section #upper {
+      margin-left: 5vw;
+      width: 80vw;
+  }
+  .inner-section {
+    
+    width: 80vw;
+  
+}
+.righ-inner-section {
+    float:none;
+    margin-left: 30px;
+    height: 20vh;
+ 
+}
+  }
+
   /* ================ end About-us ============ */
 @endsection
 

@@ -24,15 +24,11 @@
   color: #192646;
 }
 
-.col img {
+.col-sm img {
   width: 200px;
   height: 100px;
 }
-/*@media (min-width: 768px)
-.row-cols-md-4>* {
-    flex: 0 0 auto;
-    width: 15%;
-}*/
+
 
 
 @endsection
@@ -47,40 +43,21 @@
             he said, It is more blessed to give than to receive. (Acts 20:35)
           </p> <br>
           <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
-              <img src="./images/mtn-logo.png" alt="">
-              <p>+250782799851</p>
-            </div>
-            <div class="col">
-              <img src="./images/logo.wu.big.svg" style="background-color: rgb(7, 7, 99);" alt="">
-              <p></p>
-            </div>
-            <div class="col"><img src="./images/World-remit-logo.jpeg" alt=""></div>
-            <div class="col">
-              <img src="./images/kcb.png" alt="">
-              <p>4401316835</p>
-            </div>
+            <div class="row" style="width: 65vw;">
+              <div class="col-sm">
+                <img src="./images/mtn-logo.png" alt="">
+                <p>+250782799851</p>
+              </div>
+              <div class="col-sm">
+                <img src="./images/logo.wu.big.svg" style="background-color: rgb(7, 7, 99);" alt="">
+                <p></p>
+              </div>
+              <div class="col-sm"><img src="./images/World-remit-logo.jpeg" alt=""></div>
+              <div class="col-sm">
+                <img src="./images/kcb.png" alt="">
+                <p>4401316835</p>
+              </div>
           </div>
-        <!-- </div>
-          <div class="inner-main-body-section">
-            <div id="mtn-donate">
-              <img src="./images/mtn-logo.png" alt="">
-              <p>+250782799851</p>
-            </div>
-            <div id="WU-donate">
-              <img src="./images/logo.wu.big.svg" style="background-color: rgb(7, 7, 99);" alt="">
-              <p></p>
-            </div>
-            <div id="Word-lemit-donate">
-              <img src="./images/World-remit-logo.jpeg" alt="">
-            </div>
-            <div id="kcb-donate-bank">
-              <img src="./images/kcb.png" alt="">
-              <p>4401316835</p>
-            </div>
-          </div>
-        </div> -->
       </main>
       <br><br><br><br><br>
 @endsection
