@@ -139,132 +139,41 @@
       <nav>
             <a
             href="/sermony"
-            
             >Justification By Faith</a
           >
           <a href="/sermony-current-event">Current Events (Prophecy)</a>
           <a href="./sermony-temperence" style="background-color: #ffb72b; color: black">Temperence</a>
         </nav>
       </div>
-      <div class="row">
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">17</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
+    <div class="row">
+        @foreach ($sermonies as $sermon)
+            <div class="introduction col-md-6">
+                <div class="intro-sermony">
+                    <div class="date-bar">
+                        <div class="day">{{ date("d", strtotime($sermon->created_at)) }}</div>
+                        <div>
+                            <span class="month">{{ date("F", strtotime($sermon->created_at)) }}</span>
+                            <span class="year">{{ date("Y", strtotime($sermon->created_at)) }}</span>
+                        </div>
+                        <img src="{{ $sermon->photo }}" alt="" style="width:260px; height: 220px;">
+                    </div>
+                    <div class="sermon-intro-content">
+                        <div class="sermon-title">
+                            <h3>{{ $sermon->title }}</h3>
+                        </div>
+                        <div class="sermon-content">
+                            <p>
+                                <span style="font-weight: 400">
+                                  {{ $sermon->introduction }}
+                                  </span>
+                            </p>
+                            <button><a href="{{route('sermon.show',['sermon'=>$sermon])}}">Read More</a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-1">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-   
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">17</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-2">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">16</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-3">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">15</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="{{url('images/sermon.jpg')}}" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-4">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+        @endforeach
+    </div>
 
-      </div>
-      
     </main>
 @endsection

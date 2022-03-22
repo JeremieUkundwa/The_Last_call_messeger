@@ -6,13 +6,13 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('New Video') }}</div>
+                    <div class="card-header">{{ __('New Audio') }}</div>
 
                     <div class="card-body">
-                        <form method="post" class="card p-4 d-flex gap-2" action="{{ route('video.store') }}" enctype="multipart/form-data">
+                        <form method="post" class="card p-4 d-flex gap-2" action="{{ route('audio.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label>Video Title</label>
+                                <label>Audio Title</label>
                                 <input value="{{ old('title') }}" required type="text" class="form-control @error('title') is-invalid @enderror" name="title" placeholder="Enter Video Title">
                                 @error('title')
                                 <span class="invalid-feedback" role="alert">
@@ -21,7 +21,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Video Introduction</label>
+                                <label>Audio Introduction</label>
                                 <textarea value="{{ old('introduction') }}" required class="form-control @error('introduction') is-invalid @enderror" name="introduction" placeholder="Type Introduction"></textarea>
                                 @error('introduction')
                                 <span class="invalid-feedback" role="alert">
@@ -30,9 +30,9 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Upload Video </label>
-                                <input value="{{ old('video') }}" required type="file" class="form-control @error('video') is-invalid @enderror" name="video">
-                                @error('video')
+                                <label>Upload Audio File </label>
+                                <input value="{{ old('audio') }}" required type="file" class="form-control @error('audio') is-invalid @enderror" name="audio">
+                                @error('audio')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
