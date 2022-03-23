@@ -32,13 +32,16 @@ class HomeController extends Controller
         return view('activities');
     }
     public function sermony(){
-        return view('sermony',['sermonies'=>Sermon::all()]);
+        $sermonies = Sermon::all();
+        return view('sermony',['sermonies'=>$sermonies->where('type','Justfication by faith')]);
     }
     public function temperence(){
-        return view('sermony-temperence');
+        $sermonies = Sermon::all();
+        return view('sermony-temperence',['sermonies'=>$sermonies->where('type','Temperance')]);
     }
     public function currentEvent(){
-        return view('sermony-current-event');
+        $sermonies = Sermon::all();
+        return view('sermony-current-event',['sermonies'=>$sermonies->where('type','Current event')]);
     }
 
 }

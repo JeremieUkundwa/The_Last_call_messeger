@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\ArchiveController;
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SermonController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\AudioController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,3 +35,6 @@ Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'inde
 
 Route::resource('sermon',SermonController::class);
 Route::resource('video',VideoController::class);
+Route::resource('audio',AudioController::class);
+Route::resource('archive', ArchiveController::class);
+Route::resource('book', BookController::class);

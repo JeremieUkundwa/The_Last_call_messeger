@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -6,33 +5,34 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('New Video') }}</div>
-
+                    <div class="card-header">{{ __('New Book') }}</div>
                     <div class="card-body">
-                        <form method="post" class="card p-4 d-flex gap-2" action="{{ route('video.store') }}" enctype="multipart/form-data">
+                        <form method="post" class="card p-4 d-flex gap-2" action="{{ route('book.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label>Video Title</label>
-                                <input value="{{ old('title') }}" required type="text" class="form-control @error('title') is-invalid @enderror" name="title" placeholder="Enter Video Title">
+                                <label>Title</label>
+                                <input value="{{ old('title') }}" required type="text" class="form-control @error('title') is-invalid @enderror" name="title" placeholder="Enter Title">
                                 @error('title')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
                             </div>
+
                             <div class="form-group">
-                                <label>Video Introduction</label>
-                                <textarea value="{{ old('introduction') }}" required class="form-control @error('introduction') is-invalid @enderror" name="introduction" placeholder="Type Introduction"></textarea>
-                                @error('introduction')
+                                <label>Upload Word/Pdf File</label>
+                                <input value="{{ old('document') }}" type="file" class="form-control @error('document') is-invalid @enderror" name="document"/>
+                                @error('document')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
                             </div>
+
                             <div class="form-group">
-                                <label>Upload Video </label>
-                                <input value="{{ old('video') }}" required type="file" class="form-control @error('video') is-invalid @enderror" name="video">
-                                @error('video')
+                                <label>Book Photo</label>
+                                <input value="{{ old('photo') }}" required type="file" class="form-control @error('photo') is-invalid @enderror" name="photo">
+                                @error('photo')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -54,3 +54,4 @@
         </div>
     </div>
 @endsection
+
