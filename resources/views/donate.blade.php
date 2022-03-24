@@ -29,8 +29,6 @@
   height: 100px;
 }
 
-
-
 @endsection
 
 @section('donate-section')

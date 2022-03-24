@@ -75,6 +75,34 @@
     height: 44px;
     margin-top: 10px;
 }
+@media (max-width: 574px) {
+    .evangilist-card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90vw;
+        margin-left: 3vw;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 0px 0px 10px 10px;
+        display: inline-block;
+    }
+    .evangilist-card input {
+        width: 80vw;
+    }
+    .evangilist-card textarea {
+        width: 80vw;
+        margin-left: 0.5vw;
+    }
+
+    .contact-side-content {
+      margin-top: 7vh;
+        float: none;
+        margin-bottom: 30px;
+        width: 340px;
+        margin-left: 17px;
+        width: 340px;
+    }
+}
 @endsection
 
 @section('contact-section')

@@ -146,7 +146,8 @@
               Watch Latest Videos
             </h3>
             <div class="videos">
-              <div
+            <iframe width="560px" height="315px" src="https://www.youtube.com/embed/videoseries?list=PLZu7UNObH_vVXgvDscCsrGPo1NEPBDKaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <div
                 class="taggbox-container"
                 style="width: 100%; height: 100%; overflow: auto"
               >
@@ -159,7 +160,7 @@
                   src="https://widget.taggbox.com/embed.min.js"
                   type="text/javascript"
                 ></script>
-              </div>
+              </div> -->
             </div>
           </div>
 

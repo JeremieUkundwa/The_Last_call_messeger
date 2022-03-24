@@ -136,16 +136,16 @@ main {
     margin-top: 65px;
 }
 .videos{
-    margin-right: 20px;
-    width: 350px;
-    height: 480px;
+  margin-right: 20px;
+    width: 400px;
+    height: 376px;
     background-color: #FAF6F6;
     overflow-x: hidden;
     overflow-y: auto;
 }
  iframe{
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 370px;
 }
 /* main-ask-questions */
 
