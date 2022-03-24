@@ -384,7 +384,7 @@ textarea {
           <div class="row">
             <div class="footer-col">
               <ul>
-              <li><a href="{{route('home.archive')}}"><i class="fa fa-archive"></i> Archive</a></li>
+              <li><a href="#"><i class="fa fa-archive"></i> Archive</a></li>
               <li><a href="./book.html"><i class="fa fa-book"></i> SOP Books</a></li>
               </ul>
             </div>
