@@ -14,7 +14,9 @@ class HomeController extends Controller
     public function home(){
         return view('homePage');
     }
-
+    public function archive(){
+        return view('archive');
+    }
     public function aboutUs(){
         return view('aboutUs');
     }

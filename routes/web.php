@@ -25,6 +25,7 @@ Route::get('/activities',[HomeController::class,'activities'])->name('home.activ
 Route::get('/sermony',[HomeController::class,'sermony'])->name('sermony.sermony');
 Route::get('/sermony-current-event',[HomeController::class,'currentEvent'])->name('sermony.sermony-current-event');
 Route::get('/sermony-temperence',[HomeController::class,'temperence'])->name('sermony.sermony-temperence');
+Route::get('/archive',[HomeController::class,'archive']) ->name('home.archive');
 
 Auth::routes();
 

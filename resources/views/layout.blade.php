@@ -17,6 +17,7 @@
         </style>
         <link rel="stylesheet" href="{{url('css/footer.css')}}">
         <link rel="stylesheet" href="{{ url('css/header.css')}}">
+        <link rel="stylesheet" href="{{ url('css/archive.css')}}">
         <link rel="stylesheet" href="{{url('css/video.css')}}">
         <style>
 
@@ -373,6 +374,7 @@ textarea {
         @yield('donate-section')
         @yield('video-section')
         @yield('sermony-section')
+        @yield('archive-section')
 
     </div>
 
@@ -382,7 +384,7 @@ textarea {
           <div class="row">
             <div class="footer-col">
               <ul>
-              <li><a href="./archive.html"><i class="fa fa-archive"></i> Archive</a></li>
+              <li><a href="{{route('home.archive')}}"><i class="fa fa-archive"></i> Archive</a></li>
               <li><a href="./book.html"><i class="fa fa-book"></i> SOP Books</a></li>
               </ul>
             </div>
