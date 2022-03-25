@@ -3,26 +3,13 @@
 
 @section('video-section')
 <div class="video-section-imp">
+  @foreach ($videos as $ video)
   <div class="video1">
     <video controls width="400px" height="400px" allow-fullscreen>
-    <source src="./videos/Umpire.mkv" controls />
+    <source src="{{$video->video}}" controls />
     </video>
-    <h2>Lorem Ipsum?</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-  </div>
-  <div class="video1">
-    <video controls width="400px" height="400px" allow-fullscreen>
-    <source src="./videos/Umpire.mkv" controls />
-    </video>
-    <h2>Lorem Ipsum?</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-  </div>
-  <div class="video1">
-    <video controls width="400px" height="400px" allow-fullscreen>
-    <source src="./videos/Umpire.mkv" controls />
-    </video>
-    <h2>Lorem Ipsum?</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+    <h2>{{$video->title}}</h2>
+    <p>{{$video->introduction}}</p>
   </div>
 </div>
 @endsection
