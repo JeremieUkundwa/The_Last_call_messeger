@@ -23,7 +23,7 @@ Route::get('/',[HomeController::class,'home'])->name('home.index');
 Route::get('/about',[HomeController::class,'aboutUs'])->name('home.about');
 Route::get('/contact',[HomeController::class,'contactUs'])->name('home.contact');
 Route::get('/donate',[HomeController::class,'donate'])->name('home.donate');
-Route::get('/video',[HomeController::class,'video'])->name('home.videos');
+Route::get('/videos',[HomeController::class,'videos'])->name('home.videos');
 Route::get('/activities',[HomeController::class,'activities'])->name('home.activities');
 Route::get('/sermony',[HomeController::class,'sermony'])->name('sermony.sermony');
 Route::get('/sermony-current-event',[HomeController::class,'currentEvent'])->name('sermony.sermony-current-event');
