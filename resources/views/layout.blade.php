@@ -240,6 +240,7 @@ textarea {
   margin-top: 10px;
 }
 #main-body {
+  overflow-x: hidden;
   margin-top: 30px;
   width: 70%;
   margin-left: 15vw;
@@ -269,6 +270,12 @@ textarea {
 
 /* responsive */
 @media (max-width: 574px) {
+  .tweet-widgets {
+
+    width: 300px;
+    
+}
+
 
   #main-body {
     margin-top: 30px;
@@ -282,7 +289,7 @@ textarea {
 }
 
 #main-body p {
-    
+    margin-left:-35px;
     font-size: 16px;
     width: 300px;
 }
@@ -311,8 +318,8 @@ textarea {
 }
 
 iframe {
-    width: 330px;
-    height: 340px;
+    width: 300px;
+    height: 320px;
 }
 .ask-question-section {
     background: rgba(255, 255, 255, 0.6);
@@ -328,7 +335,8 @@ iframe {
     grid-template-columns: 1fr;
 }
 .info-inner-section {
-  width: 280px;
+  width: 275px;
+    margin-left: -10px;
     
 }
 .ask-questions h1 {
@@ -345,7 +353,7 @@ iframe {
 }
 .textArea-inner-section textarea {
     margin-left: 0vw;
-    width: 280px;
+    width: 260px;
 }
 .textArea-inner-section h3 {
     padding-top: 40px;

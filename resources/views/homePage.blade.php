@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('homePageMain')
-    <main>
+    <main style="overflow-x: hidden;">
       <!-- Home Page carousel -->
       <div
         id="carouselExampleIndicators"
