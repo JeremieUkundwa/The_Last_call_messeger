@@ -137,133 +137,47 @@
       <nav>
             <a
             href="/sermony"
-            
+
             >Justification By Faith</a
           >
           <a href="/sermony-current-event" style="background-color: #ffb72b; color: black">Current Events (Prophecy)</a>
           <a href="./sermony-temperence">Temperence</a>
         </nav>
       </div>
-      <div class="row">
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">17</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="<?php echo e(url('images/sermon.jpg')); ?>" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
+    <div class="row">
+        <?php $__currentLoopData = $sermonies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sermon): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <div class="introduction col-md-6">
+                <div class="intro-sermony">
+                    <div class="date-bar">
+                        <div class="day"><?php echo e(date("d", strtotime($sermon->created_at))); ?></div>
+                        <div>
+                            <span class="month"><?php echo e(date("F", strtotime($sermon->created_at))); ?></span>
+                            <span class="year"><?php echo e(date("Y", strtotime($sermon->created_at))); ?></span>
+                        </div>
+                        <img src="<?php echo e($sermon->photo); ?>" alt="" style="width:260px; height: 220px;">
+                    </div>
+                    <div class="sermon-intro-content">
+                        <div class="sermon-title">
+                            <h3><?php echo e($sermon->title); ?></h3>
+                        </div>
+                        <div class="sermon-content">
+                            <p>
                 <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
                 >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-1">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-   
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">17</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="<?php echo e(url('images/sermon.jpg')); ?>" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-2">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">16</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="<?php echo e(url('images/sermon.jpg')); ?>" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-3">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="introduction col-md-6">
-        <div class="intro-sermony">
-          <div class="date-bar">
-            <div class="day">15</div>
-            <div>
-              <span class="month">March</span>
-              <span class="year">2022</span>
-            </div>
-            <img src="<?php echo e(url('images/sermon.jpg')); ?>" alt="" style="width:260px; height: 220px;">
-          </div>
-          <div class="sermon-intro-content">
-            <div class="sermon-title">
-              <h3>The Sanctified Life</h3>
-            </div>
-            <div class="sermon-content">
-              <p>
-                <span style="font-weight: 400"
-                  >It's always good to bring a slower friend with you on a hike.
-                  If you happen to come across bears, the whole group doesn't
-                  have to worry. Only the slowest in the group do. That was the
-                  lesson they were about to learn that day.</span
-                >
-              </p>
-              <button><a href="./sermons.html#link-to-sermon-4">Read More</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+                  <?php echo e($sermon->introduction); ?>
 
-      </div>
-      
+                  </span
+                  >
+                            </p>
+                            <button><a href="<?php echo e(route('sermon.show',['sermon'=>$sermon])); ?>">Read More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    </div>
+
     </main>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/jeremie/Desktop/project/laravel/the_last_call_messeges/resources/views/sermony-current-event.blade.php ENDPATH**/ ?>

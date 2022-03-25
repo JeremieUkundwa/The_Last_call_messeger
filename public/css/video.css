@@ -1,0 +1,36 @@
+.video-section-imp{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1vw;
+    column-gap: 20px;
+    width: 98%;
+    
+}
+
+.video1{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.video1 video{
+    width: 488px;
+}
+
+@media (max-width: 574px){
+    .video-section-imp{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 1vw;
+        column-gap: 20px;
+        width: 98%;
+        
+    }
+    .video1 {
+       
+        width: 90vw;
+    }
+}

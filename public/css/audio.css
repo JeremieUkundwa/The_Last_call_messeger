@@ -1,0 +1,17 @@
+.audio-container-doc{
+    padding-top: 30px;
+    margin-left: 30vw;
+    width: 40vw;
+}
+.audio-container-doc span{
+    font-size: 25px;
+}
+.audio-container-doc i{
+    color: darkred;
+}
+main{
+    background: #faf6f6;
+}
+.audio-content{
+    margin-left: 10vw;
+}
