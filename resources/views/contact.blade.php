@@ -96,11 +96,11 @@
 
     .contact-side-content {
       margin-top: 7vh;
-        float: none;
-        margin-bottom: 30px;
-        width: 340px;
-        margin-left: 17px;
-        width: 340px;
+      float: none;
+      margin-bottom: 30px;
+      width: 340px;
+      margin-left: 9px;
+      width: 320px;
     }
 }
 @endsection
@@ -133,10 +133,10 @@
             </div>
           </div>
           <div class="contact-side-content">
-            <p>The Last Call Messengers</p>
-            <a href=""><i class="fa fa-map-marker"></i> The Last Call Messenger</a>
+            <p>The Last Call Messenges</p>
+            <a href=""><i class="fa fa-map-marker"></i> The Last Call Messenges</a>
             <p> <br> <i class="fa fa-phone"></i> +250 782799851 </p>
-            <a href=""><i class="fa fa-envelope"></i> theLastCallMessenger@info.com</a>
+            <a href=""><i class="fa fa-envelope"></i> theLastCallMessenges@info.com</a>
           </div>
         </div>
       </main>

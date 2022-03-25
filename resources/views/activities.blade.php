@@ -142,6 +142,12 @@
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
 }
+.react-body h1 {
+    
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
 }
 @endsection
 

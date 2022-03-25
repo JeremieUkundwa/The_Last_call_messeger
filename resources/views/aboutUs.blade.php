@@ -110,8 +110,8 @@
 }
 .righ-inner-section {
     float:none;
-    margin-left: 30px;
-    height: 20vh;
+    margin-left: 20px;
+    height: 30vh;
  
 }
   }
