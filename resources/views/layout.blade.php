@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
-        
+
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -127,7 +127,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
- 
+
   text-align: center;
 
   color: #000000;
@@ -254,7 +254,7 @@ textarea {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  
+
   font-size: 16px;
   line-height: 20px;
   margin-left: 40px;
@@ -273,7 +273,7 @@ textarea {
   .tweet-widgets {
 
     width: 300px;
-    
+
 }
 
 
@@ -296,7 +296,7 @@ textarea {
 #main-body .inner-par{
   margin-left: 40px;
 }
-    
+
 
   .middle-components {
     margin-top: 40px;
@@ -337,7 +337,7 @@ iframe {
 .info-inner-section {
   width: 275px;
     margin-left: -10px;
-    
+
 }
 .ask-questions h1 {
     font-size: 20px;
@@ -357,12 +357,12 @@ iframe {
 }
 .textArea-inner-section h3 {
     padding-top: 40px;
-    
+
 }
 .nav-middle nav a {
-    
+
     margin-left: 15px;
-    
+
 }
 }
 
@@ -430,7 +430,7 @@ iframe {
             <a class="nav-link-header" href="./video.html">Videos</a>
             <a class="nav-link-header" href="./contactUs.html">Contact US</a>
             <a class="nav-link-header" href="./donate.html">Donate</a>
-            
+
           </nav>
         </div>
         <div class="search-container">
@@ -441,7 +441,7 @@ iframe {
         </div>
       </div> -->
     </header>
-    
+
     <div>
         @yield('homePageMain')
         @yield('about-us')
@@ -482,7 +482,7 @@ iframe {
             </div>
           </div>
           </div>
-        </div> 
+        </div>
         <div class="copyright"> <hr> &copy; Copyright 2022 - The Last Call Messages all rights reserved</div>
       </footer>
     <script

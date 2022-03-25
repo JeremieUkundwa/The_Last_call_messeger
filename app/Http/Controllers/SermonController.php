@@ -16,9 +16,9 @@ class SermonController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['show']]);
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -56,14 +56,14 @@ class SermonController extends Controller
             'photo'=>'required|file',
             'type'=>'required|string'
         ]);
-    
+
         $sermon = new Sermon();
         $sermon->title = $data['title'];
         $sermon->introduction = $data['introduction'];
         $sermon->content = $data['content'];
         $sermon->type = $data['type'];
-        
-    
+
+
         if ($request->hasFile('document'))
         {
             $sermon->document = $request->file('document')->store('documents', ['disk' =>'my_files']);
@@ -84,7 +84,7 @@ class SermonController extends Controller
      */
     public function show(Sermon $sermon)
     {
-        //
+        return view('sermonyview',['sermon'=>$sermon]);
     }
 
     /**
