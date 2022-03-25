@@ -148,7 +148,7 @@
 @endsection
 
 @section('sermony-section')
-<main style="background: #faf6f6">
+<main style="background: #faf6f6;">
       <div id="tabs">
         <nav>
             <a
@@ -160,7 +160,10 @@
           <a href="./sermony-temperence">Temperence</a>
         </nav>
       </div>
-      <div class="row">
+      <div class="row" style="display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;">
       @foreach ($sermonies as $sermon)
       <div class="introduction col-md-6">
         <div class="intro-sermony">

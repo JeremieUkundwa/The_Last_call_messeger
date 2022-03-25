@@ -194,7 +194,7 @@ textarea {
   border-radius: 10px;
 }
 .ask-li label {
-  margin-right: 50px
+  width:120px
 }
 .info-inner-section {
   padding-top: 30px;
@@ -392,22 +392,22 @@ iframe {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{{route('home.index')}}">Home</a>
+              <a class="nav-link active" aria-current="page" href="{{route('home.index')}}">Ahabanza</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('home.about')}}">About Us</a>
+              <a class="nav-link" href="{{route('home.about')}}">Abo turi bo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{route('home.activities')}}">Activities Of The Ministry</a>
+              <a class="nav-link"  href="{{route('home.activities')}}">Gahunda n'ibikorwa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="{{route('home.videos')}}">Videos</a>
+              <a class="nav-link " href="{{route('home.videos')}}">Videwo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="{{route('home.contact')}}">Contact US</a>
+              <a class="nav-link " href="{{route('home.contact')}}">Twandikire</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="{{route('home.donate')}}">Donate</a>
+              <a class="nav-link " href="{{route('home.donate')}}">Dushyigikire</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -459,9 +459,9 @@ iframe {
         <div class="container">
           <div class="row">
             <div class="footer-col">
-              <ul>
-              <li><a href="#"><i class="fa fa-archive"></i> Archive</a></li>
-              <li><a href="./book.html"><i class="fa fa-book"></i> SOP Books</a></li>
+              <ul style="padding-left: 0rem;">
+              <li><a href="#"><i class="fa fa-archive"></i> Ishyingu (Archive)</a></li>
+              <li><a href="./book.html"><i class="fa fa-book"></i> Umwuka w’ubuhanuzi</a></li>
               </ul>
             </div>
             <div class="footer-col">
@@ -475,7 +475,7 @@ iframe {
               </ul>
             </div>
             <div class="footer-col">
-              <ul>
+              <ul style="padding-left: 0rem;">
               <li><a href=""> <i class="fa fa-phone"></i>  +250 782799851 </a> </li>
               <li><a href=""> <i class="fa fa-map-marker"></i>  Kigali, Rwanda</a> </li>
               </ul>

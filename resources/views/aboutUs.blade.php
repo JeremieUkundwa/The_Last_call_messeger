@@ -151,16 +151,14 @@
 
           <main>
             <div class="react-body">
-                <h1>ABOUT US</h1>
+                <h1>Abo turi bo</h1>
                 <div class="top-bottom-section">
-                    <h3>Who We are</h3>
-                    <p class="para-edit" >We are lay men and women committed to spread the everlasting gospel of Jesus Christ as it is found in the Bible for preparing people to stand firm and strong in the Lord and getting ready for the imminent return of Jesus Christ. <br />
-                        Members of The Last Call Messages are recognized to be individuals who are interested and blessed with the messages being live streamed on social Medias of the LCM.  Who are voluntarily lend their hands to support group’s activities, which are regularly taking place in every week.
-                    </p>
+                    <h3>Abo turi bo</h3>
+                    <p class="para-edit" >Turi abakorerabushake biyemeje kwamamaza Ubutumwa bw’Iteka ryose buhishura Yesu Kristo, we nsanganyamatsiko ya Bibiliya; kugira ngo ubwakiriye bumuheshe gukomerera mu Mwami no guhora yiteguye uwo Yesu Kristo ugiye kugaruka vuba bidatinze. Abagize iri tsinda rya LCM bashishikajwe no kwamamaza ubwo butumwa binyuze ku mbuga nkoranyambaga z’itsinda. Ni ibikorwa bikorwa mu buryo buhoraho muri gahunda za buri cyumweru.</p>
                 </div>
                 <div class="middle-section">
-                    <h3>Our Mission</h3>
-                    <p id="upper"> Our Mission is to preach to the world the everlasting Gospel of Jesus Christ and Awakening people for His Soon Return.</p>
+                    <h3>Intego yacu</h3>
+                    <p id="upper"> Umugambi wacu ni ukumenyesha abatuye isi yose Ubutumwa Bwiza bw’iteka ryose no kubakangurira kwitegura kugaruka kwa Yesu kwegereje</p>
                     <div class="inner-section left-inner-section">
                         <h4>Matthew 28:18-20</h4>
                         <p class="para-edit" >
@@ -190,12 +188,8 @@
                     </div>
                 </div>
                 <div class="top-bottom-section">
-                    <h3>Our Vision</h3>
-                    <p class="para-edit" >Restore God’s image in all believers.
-                        To make a difference in the lives of people by impacting them, Spiritually, Socially, and Physically so that they may become Christians soldiers with genuine faith for the soon second coming of Jesus Christ. <br />
-    
-                        Provide platform space to people for unusable talents in God’s Vineyard, they learn of opportunities of how they can become involved in some lay ministry.
-                    </p>
+                    <h3>OIntumbero yacu</h3>
+                    <p class="para-edit" >Kugarura ishusho y’Imana mu bizeye Ubutumwa Bwiza. Kugaragaza itandukaniro ku batuzengurutse no kubatera umwete wo kuba bazima mu by’umwuka, mu mibanire y’abantu, ndetse n’impagarike nzima kugira ngo bahagarare bashikamye mu kwizera bategereje kugaruka kwa Yesu. Gutanga urubuga ku bantu ngo bakoreshe impano zabo mu ruzabibu rw’Uwiteka bagira uruhare mu murimo w’ivugabutumwa.</p>
                 </div>
             
             </div>

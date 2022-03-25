@@ -183,53 +183,43 @@
           
           <main>
             <div class="react-body">
-              <h1>ACTIVITIES OF THE MINISTRY</h1>
+              <h1>IBIKORWA DUKORA NA GAHUNDA</h1>
               <div class="activity">
                 <div class="activity-grid">
-                  <h3>EVANGILISM ACTIVITIES</h3>
+                  <h3>IBIKORWA BY’IVUGABUTUMWA</h3>
                   <ul id="evangelism-activity">
-                    <li>Regular weekly online (crusades) Worship Program,</li>
-                    <li>Once in a quarter we do camp meeting on special topic.</li>
-                    <li>Monthly fasting and prayers on first sabbath of the month</li>
-                    <li>Various evaangelical projects</li>
+                    <li>Gahunda zo guterana za buri cyumweru</li>
+                    <li>Buri gihembwe tugira amateraniro y’ivugabutumwa (ivuna) </li>
+                    <li>Amasengesho no kwiyiriza ubusa ku isabato ya mbere ya buri kwezi</li>
+                    <li>Indi mishanga y’ivugabutumwa</li>
                   </ul>
                 </div>
                 <div class="activity-grid">
-                  <h3>EVANGILISM PROGRAMS</h3>
+                  <h3>GAHUNDA Z’AMATERANIRO</h3>
                   <div>
                     <h4>Zoom</h4>
-                    <p>Virtual programs in a week basis are as follows:</p>
+                    <p>Amateraniro ya buri cyumweru apanze mu buryo bukurikira:</p>
                     <ul>
-                      <li>Sunday: 19h30-20h30</li>
-                      <li>Wednesday: 19h30-20h30</li>
-                      <li>Friday: 17h30-19h15</li>
-                      <li>Sabbath: 7h30-12h00 and 16h00-17h30.</li>
+                      <li>Ku wa mbere w’isabato: 19h30-20h30</li>
+                      <li>Ku wa kane w’isabato: 19h30-20h30</li>
+                      <li>Gutangira Isabato: 17h30-19h15</li>
+                      <li>Ku Isabato: 7h30-12h00 and 16h00-17h30.</li>
                     </ul>
                   </div>
                   
                 </div>
               </div>
               <div class="special-programs">
-                <h3>WHOLE WEEK SPECIAL PROGRAMS</h3>
+                <h3>IZINDI GAHUNDA ZIHARIYE</h3>
                 <div class="content">
                   <h4>Telegram platform</h4>
-                  <p> Daily at 5h30 – 6h30 AM, online worship program on telegram platform. We study SOPs books.</p>
+                  <p> Buri munsi saa kumi n’imwe n’igice za mu gitondo hariho gahunda yo kwiga umwuka w’ubuhanuzi kuri rubuga rwa Telegram</p>
                 </div>
                 <div class="content">
                   <h4>Youtube, Facebook and Twitter</h4>
-                  <p>Services are streamed live on Youtube or Facebook. </p>
+                  <p>Izindi gahunda zinyuzwa kuri Youtube, Facebook na Twitter. </p>
                 </div>	
               </div>
-              <div class="speaker">
-                <h3>SPEAKERS OF THE MINISTRY</h3>
-                <ul>
-                  <li>Main speaker: Kayitare John</li>
-                  <li>Associate speakers: Joseph Nsengiyumva  & Antoine Tuyizere</li>
-                  <li>Advisor: Alain Mucyo</li>
-                </ul>
-
-              </div>
-
             </div>
           </main>
 @endsection

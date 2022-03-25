@@ -80,8 +80,7 @@
         <div class="col">
           <div class="twetter">
             <h3 style="margin-bottom: 40px; margin-left: 50px">
-              <img src="./images/tweets.png" style="width: 30px" alt="" /> Latest
-              Tweets
+              <img src="./images/tweets.png" style="width: 30px" alt="" /> Kuri Twitter
             </h3>
             <div class="tweet-widgets">
               <a
@@ -102,39 +101,29 @@
           <div class="middle-components">
             <div class="nav-middle" style="    background-color: #192646;color: #fff;">
               <nav>
-                <a href="/sermony">Sermons</a>
-                <a href="" style="color: #4f3f96;;">Announements</a>
-                <a href="./audio-page.html">Audios</a>
+                <a href="/sermony">Ibyigisho</a>
+                <a href="" style="color: #4f3f96;;">Amatangazo</a>
+                <a href="./audio-page.html">Ibyigisho by'amajwi</a>
               </nav>
             </div>
             <hr />
             <div class="middle-content">
-              <p style="padding: 30px;"> <strong>We wish you blessings and God's gracious peace.</strong> </p>
+              <p style="padding: 30px;"> <strong>Imigisha n’Amahoro Imana itanga bibane nawe!</strong> </p>
               <p>
-                "We thank the Lord with all the heart that we have precious light
-                to present before the people, and we rejoice that we have a
-                message for this time which is present truth. The tidings that
-                Christ is our righteousness has brought relief to many, many
-                souls, and God says to His people, “Go forward.” - 1SM 357.1
+              “Dushimira Imana n’umutima wacu wose ko dufite umucyo w’agaciro wo gushyira abantu, kandi dushimishwa n’uko dufite ubutumwa bwo muri iki gihe ari bwo kuri ko muri iki gihe. Inkuru nziza yuko Kristo ari we gukiranuka kwacu yahumurije benshi n‘imitima myinshi, kandi Imana ibwira abantu bayo iti: “Mujye mbere.” UB1 285.2
               </p>
               <p>
-                The Three Angels Messages, is the message we proclaim. We invite
-                those who are ready to read it. May God bless you. The message is
-                grouped into three main categories:
+              Ubutumwa bw’abamalayika batatu nibwo butumwa bwo kubwira abatuye isi. Turakwifuriza kubugirira inyota, kandi dushimiye Imana igushoboje kwitaba irarika. Ubu ni ubutumwa bugizwe n’imigabane itatu y’ingenzi:
                 <ol>
-                  <li>Justification by grace
-                    through faith that invites us to repent and receive Jesus Christ
-                    our righteousness who becomes our life.</li> <br>
-                  <li>The prophecy that
-                  reveals the current times, we observe the signs that Jesus
-                  foretold and its fulfilment.</li> <br>
-                  <li> Healthful messages (temperance)
-                      that teach us to take care of our bodies as temples of the Holy
-                      Spirit. We urge everyone to take heed to this message. We pray for
-                      God's continuous presence. May the leading of the Holy Spirit be
-                      with every reader. Maranatha!
+                  <li>1.Ubutumwa bwo gutsindishirizwa n’ubuntu binyuze mu kwizera kuturarikira kwihana no Kwakira Yesu Kristo, we gukiranuka kwacu, maze gukiranuka kwe kugahinduka ukwacu bwite..</li> <br>
+                  <li>Ubutumwa bw’ubuhanuzi buduhishurira isaha tugezemo, tukabasha kugenzura ibihe biduhamiriza ko kuza kwa Kristo kwegereje.</li> <br>
+                  <li> 3.Ubutumwa bwo kwitungira amagara mazima butwigisha kubungabunga imibiri yacu nk’insengero za Mwuka Wera
                   </li>
                 </ol>
+                Turararikira buri wese kwita kuri ubu butumwa.Turingingira usoma ubu butumwa ngo Imana imwihishurire, kandi akomeze kuyoborwa na Mwuka Wera, we Mwigisha mukuru.
+
+                  Ubuntu bw’Umwami Yesu bubane nawe! 
+                  Maranatha!
               </p>
             </div>
           </div>
@@ -143,60 +132,47 @@
           <div class="youtube-widgets">
             <h3 style="margin-bottom: 40px">
               <img src="./images/youtube-videos.png" style="width: 30px" alt="" />
-              Watch Latest Videos
+              Ibyigisho bya vuba (video)
             </h3>
             <div class="videos">
             <iframe width="560px" height="315px" src="https://www.youtube.com/embed/videoseries?list=PLZu7UNObH_vVXgvDscCsrGPo1NEPBDKaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!-- <div
-                class="taggbox-container"
-                style="width: 100%; height: 100%; overflow: auto"
-              >
-                <div
-                  class="taggbox-socialwall"
-                  data-wall-id="88728"
-                  view-url="https://widget.taggbox.com/88728"
-                ></div>
-                <script
-                  src="https://widget.taggbox.com/embed.min.js"
-                  type="text/javascript"
-                ></script>
-              </div> -->
+              
             </div>
           </div>
 
         </div>
       </div>
       <div class="ask-questions">
-        <h1>ASK A QUESTION</h1>
+        <h1>BAZA IKIBAZO & IGITEKEREZO</h1>
         <form action="">
           <div class="ask-question-section">
             <div class="info-inner-section">
               <li class="ask-li">
-                <label for="">FIRST NAME</label>
+                <label for="">Izina</label>
                 <input type="text" name="First Name" id="" required />
               </li>
               <br />
               <li class="ask-li">
-                <label for="">LAST NAME</label>
+                <label for="">Irindi zina</label>
                 <input type="text" name="Last Name" id="" required />
               </li>
               <br />
               <li class="ask-li">
-                <label for="" style="margin-right:80px">PHONE</label>
+                <label for="" >Telephone</label>
                 <input type="number" name="Phone number" id="" required />
               </li>
               <br />
               <li class="ask-li">
-                <label for="" style="margin-right:87px">EMAIL</label>
+                <label for="">Emeli</label>
                 <input type="email" name="Email" id="" required />
               </li>
               <br />
             </div>
             <div class="textArea-inner-section">
-              <h3>What would you like to know</h3>
+              <h3>Ubutumwa cyangwa ikibazo</h3>
               <textarea name="" id="" cols="35" rows="8" required></textarea>
               <br />
-              <button type="submit">SUBMIT</button>
+              <button type="submit">Ohereza</button>
             </div>
           </div>
         </form>

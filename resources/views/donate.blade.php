@@ -3,12 +3,13 @@
 
 @section('donate-section')
 <main>
-        <div id="main-body" >
-          <h1>Help spread the Gospel with your Donation!</h1> <br>
+        <div id="main-body" style="display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;">
+          <h1>Dufashe kwamamaza inkuru ya Yesu Kristo utanga inkunda yawe</h1> <br>
           <p>
-            I have showed you all things, how that so laboring ye ought to
-            support the weak, and to remember the words of the Lord Jesus, how
-            he said, It is more blessed to give than to receive. (Acts 20:35)
+          “Nababereye icyitegererezo muri byose, yuko ari ko namwe mukwiriye gukora imirimo ngo mubone uko mufasha abadakomeye, no kwibuka amagambo Umwami Yesu yavuze ati ‘Gutanga guhesha umugisha kuruta guhabwa.” Ibyakozwe n’Intumwaa 20:35
           </p> <br>
           <div class="container">
             <div class="row" style="width: 65vw;">
@@ -27,5 +28,5 @@
               </div>
           </div>
       </main>
-      <br><br><br><br><br>
+      
 @endsection
